@@ -3943,6 +3943,12 @@ void load_localization_files(int lang) {
 		sub_handle = unzOpen("ux0:data/Late Shift/Subtitles/ru.zip");
 		f = fopen("app0:data/lang/ru.str", "r");
 		break;
+	case LANG_PL:
+		debug_log("Language: Polish\n");
+		current_lang = 6;
+		sub_handle = unzOpen("ux0:data/Late Shift/Subtitles/pl.zip");
+		f = fopen("app0:data/lang/pl.str", "r");
+		break;	
 	default:
 		debug_log("Language: English\n");
 		current_lang = 0;
